@@ -1,0 +1,44 @@
+.form-inner input {
+  border: 0 none;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+.slick-prev::before,
+.slick-next::before {
+  color: #333131;
+}
+.single-quote {
+  max-width: 96%;
+  margin: 0 auto;
+}
+.villa-entry .slick-slider button {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+.villa-entry .slick-slider button::before {
+  color: #fff;
+}
+.villa-entry .slick-slider button.slick-next {
+  left: auto;
+  right: 10px;
+}
+
+.villa-entry .slick-dots {
+	bottom: 0;
+}
+.villa-entry .slick-dots li{
+    margin: 0;
+}
+.villa-entry .slick-dots li button::before {
+	opacity: .75;
+	color: #fff;
+}
+
+.villa-entry .slick-dots li.slick-active button::before {
+	opacity: 1
+}

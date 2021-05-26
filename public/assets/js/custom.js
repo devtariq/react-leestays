@@ -121,11 +121,20 @@ JS table of index
 		items: 1,
 		
 	});
-	/* const my_calendar = new TavoCalendar('#my-calendar-1');
-	const calendar = new TavoCalendar('#my-calendar-2'); */
+
+// jQuery
+
+$("#demo").intlTelInput({
+});
+
+
+	const my_calendar = new TavoCalendar('#my-calendar-1');
+	const calendar = new TavoCalendar('#my-calendar-2');
 
 	$('.vbox-item').venobox({
 		autoplay: true,
 	}); 
+
+
 
 })(jQuery);
