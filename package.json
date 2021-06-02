@@ -46,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "fslightbox-react": "^1.6.2",
     "webpack-cli": "^4.7.0"
   }
 }

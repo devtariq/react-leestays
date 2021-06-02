@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Booking from "../components/Booking";
+import Booking2 from "../components/Booking-2";
 import VillaCarousel from "../components/VillaCarousel";
 import Review from "../components/Review";
+import PopupVideo from "../components/PopupVideo";
 export class Destination extends Component {
   render() {
     return (
@@ -11,7 +12,7 @@ export class Destination extends Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                <Booking />
+                <Booking2 />
               </div>
             </div>
           </div>
@@ -72,15 +73,7 @@ export class Destination extends Component {
               <div className="col-lg-6 col-sm-6">
                 <div className="about-img">
                   <img src="assets/images/about.jpg" alt="About" />
-                  <a
-                    className="vbox-item"
-                    data-gall="gall-video"
-                    data-autoplay="true"
-                    data-vbtype="video"
-                    href="https://youtu.be/bS5P_LAqiVg"
-                  >
-                    <i className="fa fa-play" />
-                  </a>
+                  <PopupVideo />
                 </div>
               </div>
             </div>

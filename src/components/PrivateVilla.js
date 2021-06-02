@@ -1,43 +1,59 @@
-import React, { Component } from "react";
+import React from "react";
+import {useState} from "react";
 import Slider from "react-slick";
-export default class PrivateVilla extends Component {
-    render() {
+function PrivateVilla () {
+
       const settings = {
-        dots: true,
-        infinite: true,
-        arrows: true,
-        focusOnSelect: false,
-        speed: 500,
         slidesToShow: 5,
+        dots: true,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
       };
+
+      const [privateVillas, setprivateVillas] = useState([
+            {src: 'v1.jpg', id: 1},
+            {src: 'v2.jpg', id: 1},
+            {src: 'v3.jpg', id: 1},
+            {src: 'v4.jpg', id: 1},
+            {src: 'v5.jpg', id: 1},
+            {src: 'v3.jpg', id: 1},
+            {src: 'v1.jpg', id: 1},
+      ]);
+
       return (
         
         <Slider {...settings} className="villa-wrap mt-5">
-        <div className="s-villa">
-          <img src="assets/images/v1.jpg" alt="Villa" />
-        </div>
-        <div className="s-villa">
-          <img src="assets/images/v2.jpg" alt="Villa" />
-        </div>
-        <div className="s-villa">
-          <img src="assets/images/v3.jpg" alt="Villa" />
-        </div>
-        <div className="s-villa">
-          <img src="assets/images/v4.jpg" alt="Villa" />
-        </div>
-        <div className="s-villa">
-          <img src="assets/images/v5.jpg" alt="Villa" />
-        </div>
-        <div className="s-villa">
-          <img src="assets/images/v2.jpg" alt="Villa" />
-        </div>
-        <div className="s-villa">
-          <img src="assets/images/v3.jpg" alt="Villa" />
-        </div>
-        <div className="s-villa">
-          <img src="assets/images/v4.jpg" alt="Villa" />
-        </div>
+            {privateVillas.map( (pvilla) => (
+                <div className="s-villa" key={pvilla.id}>
+                    <img src={"assets/images/" + pvilla.src} alt="Villa" />
+                </div>
+            ))}
+          
+         
       </Slider>
       );
-    }
   }
+
+  export default PrivateVilla;

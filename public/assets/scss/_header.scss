@@ -78,7 +78,10 @@ header.header-section {
         position: relative;
         transition: all 200ms linear;
         margin-left: 30px;
-
+        @media #{$small_device} {
+            margin-left: 0;
+            margin-bottom: 30px;
+        }
         .nav-link {
             color: $brand-white;
             position: relative;

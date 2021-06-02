@@ -3,11 +3,12 @@ import Booking from "../components/Booking";
 import PrivateVilla from "../components/PrivateVilla";
 import TopVilla from "../components/TopVilla";
 import ReviewSlide from "../components/Review";
+import PopupVideo from '../components/PopupVideo';
 
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="main">
         {/* Banner Section Start */}
         <section
           className="banner-section"
@@ -66,13 +67,7 @@ class Home extends Component {
         <section className="top-villa section-padding">
           <div className="container">
             <h2 className="section-title mb-5">Top Villas</h2>
-            <div className="row">
               <TopVilla />
-              <TopVilla />
-              <TopVilla />
-              <TopVilla />
-              <TopVilla />
-            </div>
           </div>
         </section>
         {/* Top Villa Section End */}
@@ -101,15 +96,7 @@ class Home extends Component {
               <div className="col-lg-6 col-sm-6">
                 <div className="about-img">
                   <img src="assets/images/about.jpg" alt="About" />
-                  <a
-                    className="vbox-item"
-                    data-gall="gall-video"
-                    data-autoplay="true"
-                    data-vbtype="video"
-                    href="https://youtu.be/bS5P_LAqiVg"
-                  >
-                    <i className="fa fa-play" />
-                  </a>
+                  <PopupVideo/>
                 </div>
               </div>
             </div>
@@ -165,7 +152,7 @@ class Home extends Component {
                 <h2 className="section-title mb-5 text-center">Recent Reviews</h2>
                 <div className="row">
                     <div className="col-lg-12">
-                    <ReviewSlide />
+                         <ReviewSlide />
                     </div>
                 </div>
             </div>

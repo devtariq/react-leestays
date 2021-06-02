@@ -1,7 +1,12 @@
 .form-inner input {
   border: 0 none;
 }
-
+.main {
+    overflow-x: hidden;
+}
+.full-map > div {
+    width: 117% !important;
+}
 .slick-list:focus {
   outline: none;
 }
@@ -9,19 +14,22 @@
 .slick-next::before {
   color: #333131;
 }
-.single-quote {
-  max-width: 96%;
-  margin: 0 auto;
-}
+
 .villa-entry .slick-slider button {
   position: absolute;
-  left: 10px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 3;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  opacity: .7;
+  border-radius: 50%;
 }
 .villa-entry .slick-slider button::before {
-  color: #fff;
+  color: #000;
+  font-size: 22px;
 }
 .villa-entry .slick-slider button.slick-next {
   left: auto;
@@ -34,11 +42,40 @@
 .villa-entry .slick-dots li{
     margin: 0;
 }
+.villa-entry .slick-dots li button{
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+}
 .villa-entry .slick-dots li button::before {
 	opacity: .75;
 	color: #fff;
+    font-size: 10px;
 }
 
 .villa-entry .slick-dots li.slick-active button::before {
 	opacity: 1
+}
+header.header-section {
+	z-index: 99;
+}
+
+.single-package .pckg-txt {
+	max-width: 100%;
+}
+.search-form .form-group .form-inner {
+    line-height: 1;
+}
+.review-slide .slick-prev{
+    left: -35px;
+}
+
+.review-slide .slick-next{
+    right: -35px;
+}
+.review-slide .slick-slide > div, .s-villa-carousel .slick-slide > div {
+    margin: 0 7px;
+}
+.villa-video.about-img img {
+    width: 100%;
 }
