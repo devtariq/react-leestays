@@ -23,11 +23,11 @@ export class Login extends Component {
             <div className="alt-login">
               <span>OR</span>
               <button className="custom-btn">
-                <img src="/images/google.png" alt="" />
+                <img src="assets/images/google.png" alt="" />
                 Continue using Google
               </button>
               <button className="custom-btn">
-                <img src="/images/facebook.png" alt="" />
+                <img src="assets/images/facebook.png" alt="" />
                 Continue using Facebook
               </button>
             </div>

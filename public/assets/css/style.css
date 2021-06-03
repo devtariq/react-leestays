@@ -1834,3 +1834,67 @@ div#faq-wrapper .faq-item .faq-title[aria-expanded="true"]::before {
 .similiar-villa .owl-nav>div {
     top: 35%;
 }
+
+.booking-section .nav .nav-link {
+    color: #7B7B7B;
+    font-size: 20px;
+}
+
+.booking-section .nav .nav-link.active,
+.booking-section .nav .nav-link:hover {
+    color: #3E3E3E;
+}
+
+.booking-section .card {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.booking-section .card .card-header {
+    background: #000032;
+}
+
+.booking-section .card .card-header .card-txt {
+    float: left;
+}
+
+.booking-section .card .card-header .card-txt p {
+    margin: 0;
+    color: #fff;
+}
+
+.booking-section .card .card-header button {
+    float: right;
+    border: 1px solid #FFC02E;
+    color: #FFC02E;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.booking-section .card .card-body {
+    background: #F6F6F6;
+    padding: 30px 40px 10px;
+}
+
+.booking-section .card .card-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.booking-section .card .card-body ul li {
+    font-size: 16px;
+    color: #444444;
+}
+
+.booking-section .form-group input {
+    border: 1px solid #eaedfb;
+    background: #f7f7f7;
+    border-radius: 30px;
+    padding: 7px 20px;
+}
+@media only screen and (max-width: 767px) {
+    .booking-section .card .card-body {
+        padding: 20px 20px 5px;
+    }
+}

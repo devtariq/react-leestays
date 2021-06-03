@@ -68,8 +68,14 @@ const Header = () => {
                         <i className="fa fa-user" />
                       </Link>
                       <div className="dropdown-menu">
+                        <Link to="/register" className="dropdown-item">
+                          Register
+                        </Link>
                         <Link to="/login" className="dropdown-item">
                           Login
+                        </Link>
+                        <Link to="/myprofile" className="dropdown-item">
+                          My Profile
                         </Link>
                       </div>
                     </li>
