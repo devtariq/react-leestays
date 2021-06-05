@@ -21,15 +21,16 @@
   transform: translateY(-50%);
   z-index: 3;
   left: 10px;
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   background-color: #fff;
   opacity: .7;
   border-radius: 50%;
 }
 .villa-entry .slick-slider button::before {
   color: #000;
-  font-size: 22px;
+  font-size: 20px;
+  opacity: 1;
 }
 .villa-entry .slick-slider button.slick-next {
   left: auto;
@@ -50,7 +51,7 @@
 .villa-entry .slick-dots li button::before {
 	opacity: .75;
 	color: #fff;
-    font-size: 10px;
+    font-size: 8px;
 }
 
 .villa-entry .slick-dots li.slick-active button::before {

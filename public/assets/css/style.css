@@ -1,19 +1,9 @@
 /* =======================================================
-  Template Name: Dev Template
+  Template Name: LeeStays React Template
   Author Name: Tariqul Islam
   Author Url: metariqul91@gmail.com
 ============================================================*/
-/*
-  $shadow-color: red;  // could also be a #F9F8F6 type color
-  @include box-shadow(0 0px 12px rgba($shadow-color, .9));
-*/
-/*
-h1 { @include heading-1; }
-h2 { @include heading-2; }
-h3 { @include heading-3; }
-h4 { @include heading-4; }
-.sidebar h2 { @include heading-4; }
-*/
+
 /* ======================================
 1.2 FONTS FOR THEME
 ========================================*/
@@ -167,9 +157,10 @@ div#faq-wrapper .faq-item .faq-title:before,
 }
 
 .section-title {
-    font-size: 37px;
+    font-size: 28px;
     line-height: 1.4;
     text-transform: capitalize;
+    font-weight: 600;
 }
 
 @media only screen and (max-width: 767px) {
@@ -245,7 +236,7 @@ a#scrollUp {
 }
 
 .slick-dots li button::before {
-    font-size: 12px;
+    font-size: 9px;
 }
 
 .slick-dots li {
@@ -410,8 +401,7 @@ header.header-section {
     font-size: 13px;
     letter-spacing: 1px;
     z-index: 9;
-    color: #212121;
-    background-color: #e6e1ec;
+    background-color: #000032;
     border: none;
     border-radius: 3px;
     box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
@@ -428,15 +418,15 @@ header.header-section {
 
 .navbar .nav-item .dropdown-menu .dropdown-item {
     padding: 3px 15px;
-    color: #212121;
+    color: #fff;
     border-radius: 2px;
     transition: all 200ms linear;
 }
 
 .navbar .nav-item .dropdown-menu .dropdown-item:hover,
 .navbar .nav-item .dropdown-menu .dropdown-item:focus {
-    color: #fff;
-    background-color: rgba(129, 103, 169, 0.6);
+    color: #FFC02E;
+    background-color: transparent;
 }
 
 .navbar .nav-item.show .dropdown-menu {
@@ -648,7 +638,7 @@ header.header-section {
 }
 
 .banner-section .banner-wrap .search-form {
-    max-width: 90%;
+    max-width: 80%;
     position: relative;
     margin: 0 auto;
     background-color: #fff;
@@ -666,6 +656,15 @@ header.header-section {
         max-width: 100%;
     }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .banner-section .banner-wrap .search-form {
+        max-width: 100%;
+    }
+    .banner-section .banner-wrap .custom-btn{
+        padding: 10px 25px;
+    }
+}
+
 
 .search-form form {
     padding: 20px 10px 15px 60px;
@@ -695,7 +694,7 @@ header.header-section {
 }
 
 .search-form .form-group {
-    width: 22%;
+    width: 20%;
     display: inline-block;
 }
 
@@ -710,17 +709,11 @@ header.header-section {
 }
 
 .search-form .form-group label {
-    text-transform: uppercase;
-    font-weight: 600;
     display: block;
     line-height: 1;
+    font-size: 17px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .search-form .form-group label {
-        font-size: 12px;
-    }
-}
 
 .search-form .form-group .form-control {
     color: #D8D8D8;
@@ -743,7 +736,7 @@ header.header-section {
 }
 
 .search-form .form-group.date-group {
-    width: 30%;
+    width: 35%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -761,7 +754,7 @@ header.header-section {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 18%;
+    width: 20%;
 }
 
 .search-form .form-group.search-btn .custom-btn {
@@ -809,9 +802,12 @@ header.header-section {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .form-section .form-group.search-btn.right-border .custom-btn {
+    .form-section .form-group.search-btn .custom-btn {
         padding: 10px 15px;
         font-size: 16px;
+    }
+    .navbar .nav-item:last-child .dropdown-menu {
+        left: -65px;
     }
 }
 
@@ -1073,17 +1069,20 @@ header.header-section {
     margin-bottom: 30px;
 }
 
-.about-section .about-txt h3,
-.about-section .about-txt p {
+.about-section .about-txt h3
+ {
     color: #fff;
 }
-
+.about-section .about-txt p{
+    color: #e5e5e5;
+    line-height: 26px;
+}
 .about-img button{
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 45px;
-    height: 46px;
+    width: 60px;
+    height: 60px;
     background: none;
     line-height: 45px;
     border: 2px solid #fff;
@@ -1091,8 +1090,11 @@ header.header-section {
     color: #fff;
     border-radius: 50%;
     transform: translate(-50%, -50%);
+    font-size: 25px;
 }
-
+.about-img button:focus{
+    outline: 0 none;
+}
 .choose-item {
     margin-top: 60px;
 }
@@ -1162,8 +1164,9 @@ header.header-section {
 }
 
 div#faq-wrapper {
-    background: #f5f4f4;
+    background: #F7F7F7;
     border: 1px solid #BBBBBB;
+    margin: 45px 0 60px;
 }
 
 div#faq-wrapper .faq-item {
@@ -1171,8 +1174,8 @@ div#faq-wrapper .faq-item {
     padding: 15px 20px;
 }
 
-div#faq-wrapper .faq-item .faq-title {
-    font-size: 20px;
+div#faq-wrapper .faq-item h4.faq-title {
+    font-size: 17px;
     font-weight: 400;
     cursor: pointer;
     padding-left: 25px;

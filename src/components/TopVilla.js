@@ -23,7 +23,7 @@ function TopVilla() {
     return (
         <div className="row">
             {topVillas.map((tvilla) => (
-                <div className="col-lg-4" key={tvilla.id}>
+                <div className="col-lg-4 col-sm-6" key={tvilla.id}>
                     <div className="villa-entry">
                         <div className="villa-img">
                             <div className="batch"><img src="assets/images/bookmark.png" alt="" /></div>
